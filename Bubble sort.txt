@@ -1,0 +1,12 @@
+N=int(input("N= "))
+arr=[]
+for i in range(N):
+    x=int(input())
+    arr.append(x)
+
+for j in range(N-1):
+    for i in range(N-1):
+        if arr[i]>arr[i+1]:
+            arr[i],arr[i+1]=arr[i+1],arr[i]
+for i in arr:
+    print(i,end=" ")
